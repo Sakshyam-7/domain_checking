@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services | Govinda Bhandari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        /* ================= SUBTLE BACKGROUND PATTERN ================= */
+        body {
+            background-color: #f8fbff;
+            background-image: radial-gradient(#dbe7f5 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+        /* ================= BANNER ================= */
+        .services-hero {
+            background: linear-gradient(120deg, #003366, #0055a5);
+            color: white;
+            padding: 65px 20px 45px;
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            font-size: 44px;
+            color: #ffcc00;
+            animation: slideDown 1s ease forwards;
+        }
+
+        .services-hero p {
+            font-size: 17px;
+            margin-top: 8px;
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        /* ================= MAIN LAYOUT ================= */
+        .services-container {
+            max-width: 1150px;
+            margin: 40px auto;
+            display: flex;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .services-left {
+            flex: 1;
+            animation: slideLeft 1s ease forwards;
+        }
+
+        .services-left h2 {
+            font-size: 28px;
+            color: #003366;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .services-left p {
+            font-size: 16.5px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* NEW IMAGE STYLE */
+        .services-left img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            margin-top: 10px;
+        }
+
+        .services-right {
+            flex: 1.5;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            animation: fadeUp 1.2s ease forwards;
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px 22px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .service-card i {
+            font-size: 28px;
+            color: #0055a5;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            color: #003366;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            font-size: 14.8px;
+            line-height: 1.6;
+        }
+
+        /* ================= WHY SECTION ================= */
+        .why-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            animation: fadeUp 1.2s ease forwards;
+        }
+
+        .why-section h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .why-section ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* ================= ANIMATIONS ================= */
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideLeft {
+            from { opacity: 0; transform: translateX(-25px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 900px) {
+            .services-container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html" style="color:#ffcc00;">Services</a>
+    <a href="awards.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ================= BANNER ================= -->
+<div class="services-hero">
+    <h1>Services</h1>
+    <p>Professional Insurance Solutions for Long-Term Financial Security</p>
+</div>
+
+<!-- ================= MAIN TWO-PART SECTION ================= -->
+<section class="services-container">
+
+    <div class="services-left">
+        <h2>My Professional Services</h2>
+        <p>
+            With over 17 years of industry experience, I provide reliable and
+            personalized insurance solutions designed to protect families,
+            secure investments, and build long-term financial stability.
+            My approach focuses on trust, clarity, and ongoing client support.
+        </p>
+
+        <!-- ADD YOUR IMAGE HERE -->
+        <img src="assets/images/service image.jpeg" alt="Professional Services">
+    </div>
+
+    <div class="services-right">
+
+        <div class="service-card">
+            <i class="fas fa-shield-heart"></i>
+            <h3>Life Insurance Planning</h3>
+            <p>Customized protection plans to secure your family’s future.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-file-signature"></i>
+            <h3>Policy Consultation</h3>
+            <p>Expert advice to select the right plan for your life goals.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Financial Security Planning</h3>
+            <p>Structured strategies for savings, protection, and growth.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-hand-holding-dollar"></i>
+            <h3>Claim Assistance</h3>
+            <p>Complete support for smooth and timely claim settlement.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-headset"></i>
+            <h3>Customer Support</h3>
+            <p>Continuous guidance even after policy issuance.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-users"></i>
+            <h3>Team Leadership</h3>
+            <p>Professional mentoring and development for agency growth.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE SECTION ================= -->
+<section class="why-section">
+    <h2>Why Choose My Services?</h2>
+    <ul>
+        <li>17+ years of professional experience</li>
+        <li>MDRT & COT achievements</li>
+        <li>Ethical and transparent approach</li>
+        <li>Client-focused customized solutions</li>
+        <li>Strong support before and after policy issuance</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© Nepal Life Insurance Agent | Nepal</p>
+</footer>
+
+</body>
+</html>

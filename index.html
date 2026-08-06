@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Govinda Bhandari | Senior Agency Manager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
+    background: linear-gradient(120deg, #003366, #0055a5);
+    color: white;
+}
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ffcc00;
+    margin: 15px;
+}
+
+.hero-text {
+    max-width: 520px;
+    margin: 15px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+    min-height: 48px;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    color: #ffcc00;
+}
+
+.hero-text p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 26px;
+    background: #ffcc00;
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: white;
+}
+
+/* ================= PAGE NAVIGATION ================= */
+.page-links {
+    background: white;
+    padding: 18px 15px;
+    text-align: center;
+}
+
+.page-links a {
+    display: inline-block;
+    margin: 6px 8px;
+    padding: 10px 22px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.page-links a:hover {
+    background: #ffcc00;
+    color: #003366;
+}
+
+/* ================= COUNTERS ================= */
+.counters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    padding: 35px 15px;
+}
+
+.counter-box {
+    width: 200px;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    background: #f4f6f8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.counter {
+    font-size: 38px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.counter-box p {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials {
+    background: #003366;
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.testimonial-box {
+    max-width: 600px;
+    margin: auto;
+    display: none;
+}
+
+.testimonial-box.active {
+    display: block;
+}
+
+.testimonial-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.testimonial-box h4 {
+    margin-top: 15px;
+    color: #ffcc00;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="assets/images/profile.jpg" alt="Govinda Bhandari">
+
+    <div class="hero-text">
+        <h1 id="typing"></h1>
+        <h2>Senior Agency Manager</h2>
+        <p>Nepal Life Insurance Company Ltd</p>
+        <p>17+ Years of Professional Excellence in Insurance & Financial Planning</p>
+
+        <a href="contact.html" class="contact-btn">Contact Me</a>
+    </div>
+</section>
+
+<!-- PAGE NAVIGATION -->
+<section class="page-links">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="awards.html">Awards</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</section>
+
+<!-- COUNTERS -->
+<section class="counters">
+    <div class="counter-box">
+        <div class="counter" data-target="17">0</div>
+        <p>Years Experience</p>
+    </div>
+    <div class="counter-box">
+        <div class="counter" data-target="1000">0</div>
+        <p>Happy Clients</p>
+    </div>
+    <div class="counter-box">
+        <div class="counter" data-target="50">0</div>
+        <p>Awards Achieved</p>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <h2>What Clients Say</h2>
+
+    <div class="testimonial-box active">
+        <p>“Professional, trustworthy and highly experienced insurance advisor.”</p>
+        <h4>— Client from Kathmandu</h4>
+    </div>
+
+    <div class="testimonial-box">
+        <p>“Clear guidance and excellent long-term planning support.”</p>
+        <h4>— Business Client</h4>
+    </div>
+
+    <div class="testimonial-box">
+        <p>“17+ years of experience truly reflects in his service.”</p>
+        <h4>— Senior Client</h4>
+    </div>
+</section>
+
+<footer>
+    © 2026 Govinda Bhandari | All Rights Reserved
+</footer>
+
+<script>
+/* ===== PROPER TYPING ANIMATION (FIXED) ===== */
+const text = "Govinda Bhandari";
+let index = 0;
+const speed = 120;
+
+function typingEffect() {
+    if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typingEffect, speed);
+    }
+}
+typingEffect();
+
+/* ===== COUNTER ANIMATION ===== */
+const counters = document.querySelectorAll(".counter");
+counters.forEach(counter => {
+    let target = +counter.getAttribute("data-target");
+    let count = 0;
+    let increment = target / 100;
+
+    function update() {
+        count += increment;
+        if (count < target) {
+            counter.innerText = Math.floor(count);
+            requestAnimationFrame(update);
+        } else {
+            counter.innerText = target + "+";
+        }
+    }
+    update();
+});
+
+/* ===== TESTIMONIAL SLIDER ===== */
+let tIndex = 0;
+const testimonials = document.querySelectorAll(".testimonial-box");
+
+setInterval(() => {
+    testimonials[tIndex].classList.remove("active");
+    tIndex = (tIndex + 1) % testimonials.length;
+    testimonials[tIndex].classList.add("active");
+}, 4000);
+</script>
+
+</body>
+</html>
