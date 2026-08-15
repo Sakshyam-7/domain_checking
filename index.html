@@ -1,288 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Govinda Bhandari | Senior Agency Manager</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
-}
-
-body {
-    background: #f4f6f8;
-    color: #222;
-}
-
-/* ================= HERO SECTION ================= */
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 55px 20px;
-    background: linear-gradient(120deg, #003366, #0055a5);
-    color: white;
-}
-
-.hero img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid #ffcc00;
-    margin: 15px;
-}
-
-.hero-text {
-    max-width: 520px;
-    margin: 15px;
-}
-
-.hero-text h1 {
-    font-size: 38px;
-    margin-bottom: 8px;
-    min-height: 48px;
-}
-
-.hero-text h2 {
-    font-size: 22px;
-    color: #ffcc00;
-}
-
-.hero-text p {
-    margin-top: 8px;
-    font-size: 18px;
-}
-
-/* CONTACT BUTTON */
-.contact-btn {
-    display: inline-block;
-    margin-top: 16px;
-    padding: 12px 26px;
-    background: #ffcc00;
-    color: #003366;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.contact-btn:hover {
-    background: white;
-}
-
-/* ================= PAGE NAVIGATION ================= */
-.page-links {
-    background: white;
-    padding: 18px 15px;
-    text-align: center;
-}
-
-.page-links a {
-    display: inline-block;
-    margin: 6px 8px;
-    padding: 10px 22px;
-    background: #003366;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-.page-links a:hover {
-    background: #ffcc00;
-    color: #003366;
-}
-
-/* ================= COUNTERS ================= */
-.counters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: white;
-    padding: 35px 15px;
-}
-
-.counter-box {
-    width: 200px;
-    margin: 10px;
-    padding: 25px;
-    text-align: center;
-    border-radius: 10px;
-    background: #f4f6f8;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.counter {
-    font-size: 38px;
-    color: #003366;
-    font-weight: bold;
-}
-
-.counter-box p {
-    margin-top: 8px;
-    font-size: 17px;
-}
-
-/* ================= TESTIMONIALS ================= */
-.testimonials {
-    background: #003366;
-    color: white;
-    padding: 55px 20px;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.testimonial-box {
-    max-width: 600px;
-    margin: auto;
-    display: none;
-}
-
-.testimonial-box.active {
-    display: block;
-}
-
-.testimonial-box p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.testimonial-box h4 {
-    margin-top: 15px;
-    color: #ffcc00;
-}
-
-/* ================= FOOTER ================= */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Govinda Bhandari | Senior Agency Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
+<!-- NAVIGATION -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="logo-wrapper">
+            <span class="logo">GB.</span>
+            <!-- Fallback to a standard building/insurance icon if the logo fails to load, but typically it will load from their official site -->
+            <img src="https://www.nepallife.com.np/frontend/images/logo.png" alt="Nepal Life Insurance Logo" class="nav-logo-img" onerror="this.style.display='none'">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#how-i-work" class="nav-link">Process</a></li>
+            <li><a href="#awards" class="nav-link">Awards</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
 <!-- HERO SECTION -->
-<section class="hero">
-    <img src="assets/images/profile.jpg" alt="Govinda Bhandari">
-
-    <div class="hero-text">
-        <h1 id="typing"></h1>
-        <h2>Senior Agency Manager</h2>
-        <p>Nepal Life Insurance Company Ltd</p>
-        <p>17+ Years of Professional Excellence in Insurance & Financial Planning</p>
-
-        <a href="contact.html" class="contact-btn">Contact Me</a>
+<section id="hero" class="hero">
+    <div class="hero-content fade-up">
+        <img src="assets/images/profile.jpg" alt="Govinda Bhandari">
+        <h1 id="hero-name">Govinda Bhandari</h1>
+        <h2>Senior Agency Manager at Nepal Life Insurance Company Ltd</h2>
+        <p>17+ Years of Experience helping individuals and families secure their financial future through trusted, transparent planning.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
     </div>
 </section>
 
-<!-- PAGE NAVIGATION -->
-<section class="page-links">
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="awards.html">Awards</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-</section>
-
-<!-- COUNTERS -->
-<section class="counters">
-    <div class="counter-box">
-        <div class="counter" data-target="17">0</div>
+<!-- STATS BAR -->
+<section id="stats" class="stats">
+    <div class="stat-box fade-up">
+        <div class="stat-counter" data-target="17">0</div>
         <p>Years Experience</p>
     </div>
-    <div class="counter-box">
-        <div class="counter" data-target="1000">0</div>
+    <div class="stat-box fade-up delay-1">
+        <div class="stat-counter" data-target="1000">0</div>
         <p>Happy Clients</p>
     </div>
-    <div class="counter-box">
-        <div class="counter" data-target="50">0</div>
+    <div class="stat-box fade-up delay-2">
+        <div class="stat-counter" data-target="50">0</div>
         <p>Awards Achieved</p>
     </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-    <h2>What Clients Say</h2>
-
-    <div class="testimonial-box active">
-        <p>“Professional, trustworthy and highly experienced insurance advisor.”</p>
-        <h4>— Client from Kathmandu</h4>
+<!-- ABOUT SECTION -->
+<section id="about" class="about section-padding alt-bg">
+    <div class="container flex-row">
+        <div class="about-text fade-left">
+            <h2 class="section-title">My Journey</h2>
+            <p>I entered the insurance industry over 17 years ago with a simple goal: to help people navigate the complexities of financial planning with clarity and honesty.</p>
+            <p>Over the years, I've seen firsthand how a well-structured life insurance or pension plan can rescue a family from crisis or ensure a peaceful retirement. My philosophy is rooted in <strong>needs-based planning</strong>—I don't just sell policies; I take the time to understand your unique situation, goals, and fears before recommending a solution.</p>
+            <p>Today, as a Senior Agency Manager at Nepal Life Insurance Company Ltd, I also dedicate my time to mentoring a new generation of financial advisors, instilling in them the same ethical, client-centered approach that has been the foundation of my career.</p>
+        </div>
+        <div class="about-video fade-right">
+            <div id="yt-player"></div>
+        </div>
     </div>
+</section>
 
-    <div class="testimonial-box">
-        <p>“Clear guidance and excellent long-term planning support.”</p>
-        <h4>— Business Client</h4>
+<!-- SERVICES SECTION -->
+<section id="services" class="services section-padding">
+    <div class="container">
+        <h2 class="section-title text-center fade-up">Services I Offer</h2>
+        <p class="section-subtitle text-center fade-up">Tailored financial solutions designed to protect what matters most.</p>
+        
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <i class="fas fa-shield-heart"></i>
+                <h3>Life Insurance Protection</h3>
+                <p><strong>For:</strong> Families and breadwinners.</p>
+                <p><strong>Problem Solved:</strong> Ensures your family is financially secure and can maintain their standard of living if the unexpected happens.</p>
+            </div>
+            
+            <div class="service-card fade-up delay-1">
+                <i class="fas fa-piggy-bank"></i>
+                <h3>Retirement Planning</h3>
+                <p><strong>For:</strong> Professionals planning for the future.</p>
+                <p><strong>Problem Solved:</strong> Replaces uncertainty with a guaranteed income stream, so you can enjoy your retirement years without financial stress.</p>
+            </div>
+            
+            <div class="service-card fade-up delay-2">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Child Education Plans</h3>
+                <p><strong>For:</strong> Parents with young children.</p>
+                <p><strong>Problem Solved:</strong> Guarantees funds will be available for your child's higher education, regardless of what the future holds.</p>
+            </div>
+            
+            <div class="service-card fade-up">
+                <i class="fas fa-chart-line"></i>
+                <h3>Investment-Linked Policies</h3>
+                <p><strong>For:</strong> Individuals seeking growth + protection.</p>
+                <p><strong>Problem Solved:</strong> Combines wealth accumulation with life cover, helping beat inflation while staying protected.</p>
+            </div>
+            
+            <div class="service-card fade-up delay-1">
+                <i class="fas fa-hand-holding-dollar"></i>
+                <h3>Dedicated Claims Support</h3>
+                <p><strong>For:</strong> All existing clients.</p>
+                <p><strong>Problem Solved:</strong> Navigating paperwork during stressful times. I provide hands-on assistance to ensure smooth, timely claim settlements.</p>
+            </div>
+            
+            <div class="service-card fade-up delay-2">
+                <i class="fas fa-users"></i>
+                <h3>Agency Mentorship</h3>
+                <p><strong>For:</strong> Aspiring insurance professionals.</p>
+                <p><strong>Problem Solved:</strong> Overcoming the steep learning curve of the industry through guided leadership and proven ethical sales strategies.</p>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class="testimonial-box">
-        <p>“17+ years of experience truly reflects in his service.”</p>
-        <h4>— Senior Client</h4>
+<!-- HOW I WORK SECTION -->
+<section id="how-i-work" class="how-i-work section-padding dark-bg">
+    <div class="container">
+        <h2 class="section-title text-center fade-up">How I Work</h2>
+        <div class="process-timeline">
+            <div class="process-step fade-up">
+                <div class="step-number">1</div>
+                <h3>Consultation</h3>
+                <p>A pressure-free meeting to discuss your current financial standing and future aspirations.</p>
+            </div>
+            <div class="process-step fade-up delay-1">
+                <div class="step-number">2</div>
+                <h3>Needs Analysis</h3>
+                <p>Identifying the gaps in your financial security and calculating the exact coverage you need.</p>
+            </div>
+            <div class="process-step fade-up delay-2">
+                <div class="step-number">3</div>
+                <h3>Recommendation</h3>
+                <p>Presenting tailored plan options with complete transparency about benefits and commitments.</p>
+            </div>
+            <div class="process-step fade-up delay-3">
+                <div class="step-number">4</div>
+                <h3>Ongoing Support</h3>
+                <p>Annual reviews, policy updates, and direct assistance whenever you need to file a claim.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AWARDS SECTION -->
+<section id="awards" class="awards section-padding">
+    <div class="container">
+        <h2 class="section-title text-center fade-up">Credentials & Recognition</h2>
+        <div class="awards-grid">
+            <div class="award-card fade-up">
+                <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                <div class="award-year">2026</div>
+                <h3>MDRT & COT Qualification</h3>
+                <span class="issuer">Million Dollar Round Table</span>
+                <p>Achieved Court of the Table distinction, representing the highest international performance and ethical benchmarks in financial advisory.</p>
+            </div>
+            <div class="award-card fade-up delay-1">
+                <div class="award-icon"><i class="fas fa-medal"></i></div>
+                <div class="award-year">2023 - 2026</div>
+                <h3>Leadership Excellence Award</h3>
+                <span class="issuer">Nepal Life Insurance Company Ltd</span>
+                <p>Recognized for outstanding leadership, strategic agency development, and consistent team high performance.</p>
+            </div>
+            <div class="award-card fade-up delay-2">
+                <div class="award-icon"><i class="fas fa-star"></i></div>
+                <div class="award-year">Since 2010</div>
+                <h3>Nepal Life Star Award</h3>
+                <span class="issuer">Nepal Life Insurance Company Ltd</span>
+                <p>A consistent recipient reflecting deep reliability, sustained excellence, and unwavering dedication to clients.</p>
+            </div>
+            <div class="award-card fade-up">
+                <div class="award-icon"><i class="fas fa-certificate"></i></div>
+                <div class="award-year">2009</div>
+                <h3>Licensed Insurance Agent</h3>
+                <span class="issuer">Beema Samiti (Insurance Board of Nepal)</span>
+                <p>Officially certified to provide financial and insurance advisory services in Nepal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="testimonials section-padding alt-bg">
+    <div class="container text-center">
+        <h2 class="section-title fade-up">Client Stories</h2>
+        <div class="testimonial-slider fade-up">
+            <div class="testimonial active">
+                <p>"When I started my business, I ignored life insurance because I thought I couldn't afford it. Govinda sat down with me, reviewed my cash flow, and found a flexible term plan that protected my family without straining my budget. His honest approach won my trust completely."</p>
+                <h4>— Rajesh S., Small Business Owner</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Govinda helped us set up a child education plan when our daughter was just born. Last year, when she was ready for university, the maturity amount was processed seamlessly. He handled all the paperwork. We couldn't be more grateful."</p>
+                <h4>— Sunita & Ramesh T.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I had policies from different companies and was thoroughly confused about what I was paying for. Govinda did a complete portfolio review, explained the gaps, and helped me consolidate my investments. He's not an agent; he's a true financial advisor."</p>
+                <h4>— Dr. Amit K., Medical Professional</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery section-padding">
+    <div class="container">
+        <h2 class="section-title text-center fade-up">Gallery & Moments</h2>
+        <div class="gallery-grid">
+            <div class="gallery-card fade-up"><img src="assets/images/gallery1.jpg" alt="MDRT 2026"><div class="overlay"><span>MDRT Achiever 2026</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery2.jpg" alt="MDRT Celebration"><div class="overlay"><span>MDRT Celebration</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery3.jpg" alt="MDRT"><div class="overlay"><span>MDRT Conference</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery4.jpg" alt="LEA Recognition"><div class="overlay"><span>LEA Recognition 2025</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery5.jpg" alt="COT Celebration"><div class="overlay"><span>COT Celebration 2026</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery6.jpg" alt="LEA Conference"><div class="overlay"><span>LEA Conference 2025</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery7.jpg" alt="MDRT Conference"><div class="overlay"><span>MDRT Conference 2024</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery8.jpg" alt="LEA Conference 2024"><div class="overlay"><span>LEA Conference 2024</span></div></div>
+            <div class="gallery-card fade-up"><img src="assets/images/gallery9.jpg" alt="LEA Conference 2023"><div class="overlay"><span>LEA Conference 2023</span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact section-padding alt-bg">
+    <div class="container">
+        <h2 class="section-title text-center fade-up">Get In Touch</h2>
+        <p class="section-subtitle text-center fade-up">Ready to secure your future? Let's have a conversation.</p>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info fade-left">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Nepal Life Insurance Company Ltd<br>Butwal Branch, Nepal</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+977-9867373938<br>+977-9857070938</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>govindabhandari2080@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://wa.me/9779857070938" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1MkR1jLoFn/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form fade-right">
+                <form action="https://formsubmit.co/govindabhandari2080@gmail.com" method="POST">
+                    <!-- Hidden fields for better UX with FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Inquiry from Portfolio!">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" placeholder="Your Phone Number">
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="How can I help you?" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 
 <footer>
-    © 2026 Govinda Bhandari | All Rights Reserved
+    <div class="container text-center">
+        <p>&copy; 2026 Govinda Bhandari | Nepal Life Insurance Agent. All Rights Reserved.</p>
+    </div>
 </footer>
 
+
 <script>
-/* ===== PROPER TYPING ANIMATION (FIXED) ===== */
-const text = "Govinda Bhandari";
-let index = 0;
-const speed = 120;
-
-function typingEffect() {
-    if (index < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typingEffect, speed);
-    }
-}
-typingEffect();
-
-/* ===== COUNTER ANIMATION ===== */
-const counters = document.querySelectorAll(".counter");
-counters.forEach(counter => {
-    let target = +counter.getAttribute("data-target");
-    let count = 0;
-    let increment = target / 100;
-
-    function update() {
-        count += increment;
-        if (count < target) {
-            counter.innerText = Math.floor(count);
-            requestAnimationFrame(update);
+    // Sticky Navbar & Active Link Highlighting
+    const navbar = document.getElementById('navbar');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    window.addEventListener('scroll', () => {
+        // Sticky nav
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
         } else {
-            counter.innerText = target + "+";
+            navbar.classList.remove('scrolled');
+        }
+        
+        // Active link highlighting
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+
+
+    });
+
+    // Mobile Hamburger Menu
+    const hamburger = document.querySelector('.hamburger');
+    const navLinksContainer = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('open');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinksContainer.classList.remove('open');
+        });
+    });
+
+    // Scroll Animations using Intersection Observer
+    const animatedElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    // Stats Counter Animation
+    const counters = document.querySelectorAll('.stat-counter');
+    let hasCounted = false;
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        if(entries[0].isIntersecting && !hasCounted) {
+            hasCounted = true;
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000; // ms
+                const increment = target / (duration / 16); 
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target + "+";
+                    }
+                };
+                updateCounter();
+            });
+        }
+    }, { threshold: 0.5 });
+    
+    if(document.getElementById('stats')) {
+        counterObserver.observe(document.getElementById('stats'));
+    }
+
+    // Testimonial Slider
+    const testimonials = document.querySelectorAll('.testimonial');
+    let tIndex = 0;
+    if(testimonials.length > 0) {
+        setInterval(() => {
+            testimonials[tIndex].classList.remove('active');
+            tIndex = (tIndex + 1) % testimonials.length;
+            testimonials[tIndex].classList.add('active');
+        }, 5000);
+    }
+    // YouTube IFrame API integration for Auto Play/Pause on Scroll
+    let ytPlayer;
+    function onYouTubeIframeAPIReady() {
+        ytPlayer = new YT.Player('yt-player', {
+            videoId: '7zga0sBKFYI',
+            playerVars: {
+                'autoplay': 0, // We control playback manually via JS
+                'controls': 0,
+                'showinfo': 0,
+                'rel': 0,
+                'modestbranding': 1,
+                'mute': 0, // Unmuted as requested by user
+                'loop': 1,
+                'playlist': '7zga0sBKFYI'
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        // Create an observer to play/pause the video based on visibility
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Try playing the video when in view
+                    ytPlayer.playVideo();
+                } else {
+                    // Pause the video when out of view
+                    ytPlayer.pauseVideo();
+                }
+            });
+        }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
+
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            videoObserver.observe(aboutSection);
         }
     }
-    update();
-});
 
-/* ===== TESTIMONIAL SLIDER ===== */
-let tIndex = 0;
-const testimonials = document.querySelectorAll(".testimonial-box");
-
-setInterval(() => {
-    testimonials[tIndex].classList.remove("active");
-    tIndex = (tIndex + 1) % testimonials.length;
-    testimonials[tIndex].classList.add("active");
-}, 4000);
+    // Hero Name Typing Animation
+    const nameEl = document.getElementById('hero-name');
+    if (nameEl) {
+        const text = nameEl.innerText;
+        nameEl.innerHTML = '';
+        text.split('').forEach((char, i) => {
+            const span = document.createElement('span');
+            span.innerText = char;
+            span.style.opacity = '0';
+            span.style.animation = `letterReveal 0.05s forwards ${i * 0.1 + 0.3}s`;
+            nameEl.appendChild(span);
+        });
+    }
 </script>
 
+<script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
