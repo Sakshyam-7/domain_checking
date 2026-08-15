@@ -332,6 +332,7 @@ nav.scrolled .nav-logo-img {
 
 .about-video {
     flex: 1;
+    width: 100%;
     position: relative;
     max-width: 350px;
     aspect-ratio: 4 / 5; /* More square aspect ratio to cut the bottom off */
